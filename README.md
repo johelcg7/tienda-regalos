@@ -17,5 +17,5 @@ Proyecto: Ecommerce de Regalos Personalizados.
 
 ## Páginas HTML:
 
-1.  [Index](https://mlimaco.github.io/tienda-regalos/)
-2. [Producto](https://johelcg7.github.io/tienda-regalos/product)
+1. [Index (Michael)](https://mlimaco.github.io/tienda-regalos/)
+2. [Producto (Johel)](https://johelcg7.github.io/tienda-regalos/product)
