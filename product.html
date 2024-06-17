@@ -2,8 +2,14 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style.css">
+    <script>
+
+        alert("Por favor, lea bien las características del producto y las condiciones de uso");
+
+    </script>
 </head>
 <body> 
+
 
     <header>
         <img src="https://mlimaco.github.io/tienda-regalos/img/logo.png">
@@ -12,7 +18,29 @@
         <a href="">
             <img src="https://mlimaco.github.io/tienda-regalos/img/carrito.png">
         </a>
-        <button> Inicia Sesion / Registrate </button>
+        <button onclick="registro()"> Inicia Sesion / Registrate 
+        
+            <script>
+                function registro() {
+                let correoCliente = "usuario@jmregalos.com"; // "" => vacio
+                 correoCliente = prompt("Coloca tu correo y/o ID usuario");
+                if (correoCliente!= "usuario@jmregalos.com") { 
+                alert("Ingresa un Correo Válido") 
+                } else {
+                    confirm ("Hola "+ correoCliente +" encantado de verte")
+                }
+
+                let passCliente = "123456"; // "" => vacio
+                passCliente = prompt("Por favor coloca tu contraseña");
+                if (passCliente!= "123456") { 
+                alert("Contraseña incorrecta, si no está registrado, regístrese")
+                } else {
+                    confirm ("Ingresaste correctamente")
+                }
+            }
+            </script>
+
+        </button>
     </header>
     
       
@@ -21,13 +49,30 @@
         <img src="https://fanfun.com.pe/cdn/shop/products/IMCUADRADAFF_20.png?v=1671746004&width=1200" alt="">
 
         <h1> STAR WARS POP CORN MAKER -R2D2 </h1>
-        <p> Precio </p>
-        <p> Cantidad </p>
+        <p> S/. 292.00 </p>
+        <button onclick="cantidad()" class="button"> Añadir cantidad </button>
+            
+            <script>
+                function cantidad(){
+                    let cantidadProducto = "";
+                    cantidadProducto= prompt("Añada la cantidad");
+                    if (cantidadProducto === "0"){
+                        alert("Ingrese cantidad mayor a cero")
+                    } else {
+                        confirm ("Ahora presione añadir a carrito o comprar ahora")
+                    }
+                    
+                }
+
+
+            </script>
         
-        <button> Añadir a carrito </button>
-        <button> Comprar ahora </button>
-        <input></input>
-        <button> Añadir cantidad </button>
+        
+        
+        <button onclick="registro()"> Añadir a carrito </button>
+        <button onclick="registro()"> Comprar ahora </button>
+        <!--<input><p> Añada cantidad </p></input>-->
+
 
         <h2> POP CORN MAKER -R2D2 </h2>
         <p1> El regalo perfecto si existe 🤩 </p1>
