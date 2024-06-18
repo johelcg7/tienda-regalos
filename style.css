@@ -1,25 +1,38 @@
 body { 
+
     background-color: white
     min-height: 100vh;
     margin: 0 auto;
     display: flex;
     flex-direction:column;
+    flex-wrap: wrap;
+
+    
+    
         
 }
 
 header {
-    display: flex;
+    
     background-color: #47A8BD;
+    display:flex;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
 }
 
 header img {
-    width: 130px;
+    
+    width: 100px;
     display: flex;
     margin: 0px auto;
-    padding: 10px;
+    padding: 10px ;
 }
 
 button {
+    text-align: justify;
+    
     border-style: solid;
     border-color: white;
     background-color: #47A8BD;
@@ -27,6 +40,7 @@ button {
     
 
 }
+
 
 input {
     color: #54494B
@@ -65,7 +79,8 @@ footer {
  
 }
 
-footer ul {display: flex;
+footer ul {
+    display: flex;
     justify-content: space-evenly;
     list-style: none;
 }
@@ -82,9 +97,10 @@ img {
 }
 
 main img {
+    
     float:left;
     height: 500px;
-    display: block;
+    display:flex;
     margin: 80px auto;
 }
 
