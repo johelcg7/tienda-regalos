@@ -7,28 +7,28 @@
 <body> 
 
 
-    <header>
+    <header class="header">
         <img src="https://mlimaco.github.io/tienda-regalos/img/logo.png">
         <button> Categorias </button>
         <input></input>
         <a href="">
             <img src="https://mlimaco.github.io/tienda-regalos/img/carrito.png">
         </a>
-        <button>             
+        <button onclick= "let nombreCliente = validacion_informacion1('Ingresa tu nombre'); let correoCliente = validacion_informacion2('Ingresa tu correo');"> Inicio de sesión     
             <script>
-            document.write(direccionCliente);
+
+            document.write("Sesión iniciada");
             </script>
         </button>
-           
-
-        
+        <button onclick="calificacion()">Califícanos</button>
+               
     </header>
     
       
     <main>
         <h1>
             <script>
-                document.write("Bienvenido, " + nombreCliente + ", es un gusto tenerte de vuelta. 🎸")
+                document.write("Bienvenido, " + nombreCliente  + ", es un gusto tenerte de vuelta. 🎸");
             </script>
         </h1>
 
@@ -36,13 +36,16 @@
 
         <h1> STAR WARS POP CORN MAKER -R2D2 </h1>
         <p> S/. 292.00 </p>
-        <button onclick="cantidad()" class="button"> Añadir cantidad </button>
-            
-            
-                      
-        <button onclick="registro()"> Añadir a carrito </button>
-        <button onclick="registro()"> Comprar ahora </button>
-        <!--<input><p> Añada cantidad </p></input>-->
+
+        <button onclick="cantidad()" class="button"> Añadir cantidad </button> 
+        <button onclick= 'alert("Primero añada cantidad")'; > Añadir a carrito </button>
+        <button onclick="validacion_informacion1('Válido solo para compras en Lima, ingresa tu dirección'); validacion_informacion2('Válido solo para compras con BCP, ingresa tu banco');"> Comprar ahora </button>
+        <p> 
+            <script>
+                document.write ("Cantidad: "+ index);
+            </script>
+        </p>
+        
 
 
         <h2> POP CORN MAKER -R2D2 </h2>
@@ -57,6 +60,7 @@
     </main>
 
     <section>
+
         <h3> Te recomendamos... </h3>
         <figure>
             <a href="">            
@@ -83,7 +87,7 @@
             </a>
         </figure>
 
-
+        
     </section>
 
 
